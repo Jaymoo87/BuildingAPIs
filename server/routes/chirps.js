@@ -9,7 +9,7 @@ router.get("/:id?", (req, res) => {
   if (id) {
     res.json(chirpstore.GetChirp(id));
   } else {
-    res.send(chirpstore.GetChirp());
+    res.send(chirpstore.GetChirps());
   }
 });
 
